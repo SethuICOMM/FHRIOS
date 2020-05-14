@@ -1,0 +1,90 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  
+</ion-header>
+
+<ion-content padding>
+ <!-- Generated template for the PinComponent component -->
+<ion-grid>
+    <ion-row>
+        <p style="margin-left: 10px">Please Enter your 5 digit pin</p>
+    </ion-row>
+  <ion-row>
+      <ion-item style="width:90%;margin-left:10%;">
+         
+          <label text-center type="password" style="letter-spacing: 20px;margin-left: 20px;font-weight: bold;"  *ngIf="displaypin">{{displaypin}}</label>
+      </ion-item>
+  </ion-row>
+<ion-row>
+  <ion-col>
+    <button ion-button round large outline (click)="handleinput('1')">1</button>
+  </ion-col>
+  <ion-col>
+      <button ion-button round large outline (click)="handleinput('2')">2</button>
+    </ion-col>
+    <ion-col>
+        <button ion-button round large outline (click)="handleinput('3')">3</button>
+      </ion-col>
+</ion-row>
+<ion-row>
+    <ion-col>
+      <button ion-button round large outline (click)="handleinput('4')">4</button>
+    </ion-col>
+    <ion-col>
+        <button ion-button round large outline (click)="handleinput('5')">5</button>
+      </ion-col>
+      <ion-col>
+          <button ion-button round large outline (click)="handleinput('6')">6</button>
+        </ion-col>
+  </ion-row>
+  <ion-row>
+      <ion-col>
+        <button ion-button round large outline (click)="handleinput('7')">7</button>
+      </ion-col>
+      <ion-col>
+          <button ion-button round large outline (click)="handleinput('8')">8</button>
+        </ion-col>
+        <ion-col>
+            <button ion-button round large outline (click)="handleinput('9')">9</button>
+          </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+         
+        </ion-col>
+        <ion-col>
+            <button ion-button round large outline (click)="handleinput('0')">0</button>
+          </ion-col>
+          <ion-col>
+             
+            </ion-col>
+      </ion-row>
+      <ion-row>
+            <ion-col>
+                <button ion-button clear large no-padding (click)="handleinput('clear')">Clear</button>
+            </ion-col>
+            <ion-col>
+             
+            </ion-col>
+            <ion-col>
+                <button ion-button clear large  (click)="pinverify()">OK</button>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+               
+            </ion-col>
+            <ion-col>
+                <button ion-button clear large  (click)="Forgotpin()">Forgot Pin</button>
+            </ion-col>
+            <ion-col>
+               
+            </ion-col>
+        </ion-row>
+</ion-grid>
+</ion-content>

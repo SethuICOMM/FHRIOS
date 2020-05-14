@@ -1,0 +1,24 @@
+page-register {
+    ion-item{
+        --background: #3880ff;
+        --color: #fff;
+    }
+
+    ion-content{
+        --background:#efeff5;
+       
+    }
+    
+    ion-button{
+        --background: #062f77;
+        
+    }
+
+    .input-border{
+        width: 90%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  box-sizing: border-box;
+    }
+}

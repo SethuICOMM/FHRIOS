@@ -1,0 +1,90 @@
+<ion-header>
+  
+</ion-header>
+
+<ion-content>
+  <ion-item>
+      <div *ngIf="clientLogo">
+    <img  src="{{clientLogo}}"  id="imgPlacement"  style="width: 100%;border-width: 02px;
+    border-style: solid;padding: 10px; margin-left: 10px;margin-top: 20px; border-color:gray;display: block;border-radius: 10px;">
+   </div>  
+  </ion-item>
+
+    
+<ion-item>
+      <div class='container2'>
+        <div class="left">
+            <div *ngIf="PFP">
+                <img style="border-radius: 50%;" src="{{PFP}}" class='iconDetails'>
+            </div>
+                    
+                 
+                     <div style="margin-left: 20px; margin-bottom: 20px;">
+                       <h4 style="font-weight: bold;">Welcome</h4>
+                       <h4 style="font-weight: bold;" *ngIf="Name">{{Name}}</h4>
+                     </div>
+          
+        </div>	
+    </div>
+  </ion-item>
+  <ion-grid >
+    
+    <ion-row>
+      <ion-col >
+          <button [disabled]="!CheckinDisabled" [hidden]="!checkin_hide" (click)="Checkin()" style="width:40px;
+          height: 40px;
+          background-color:#69B31F;
+          border-radius: 50%;
+          font-size: 20px !important;text-align:center;"> <ion-icon class="light center" name="log-in"></ion-icon> </button>
+          
+      </ion-col>
+      <ion-col>
+          <h6  style="font-size:10px;" *ngIf="CheckInTime" >{{CheckInTime}}</h6>
+         
+      </ion-col>
+      <ion-col>
+          <h6  style="font-size:10px;" *ngIf="CheckInAddress">{{CheckInAddress}}</h6>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+        <button [disabled]="!CheckoutDisabled" [hidden]="!checkout_hide" (click)="Checkin()" style="width:40px;
+        height: 40px;
+        background-color:#F64747;
+        font-size: 20px !important;
+        border-radius: 50%;
+        margin-top:5px; text-align:center;"> <ion-icon class="light center" name="log-out"></ion-icon></button>
+      
+      </ion-col>
+      <ion-col>
+          <h6  style="font-size:10px;" *ngIf="CheckOutTime">{{CheckOutTime}}</h6>
+         
+      </ion-col>
+      <ion-col>
+          <h6  style="font-size:10px;" *ngIf="CheckOutAddress">{{CheckOutAddress}}</h6>
+        </ion-col>
+    </ion-row>
+    </ion-grid>
+
+    <ion-buttons style="padding-left: 50px; padding-right: 80px;" >
+        
+        <button  ion-button full  type="submit"  (click)="homeclick()"><ion-icon name="home"></ion-icon>  Home</button>
+    </ion-buttons>
+
+
+    <ion-fab right bottom>
+        <button ion-fab color="primary"><ion-icon name="construct"></ion-icon></button>
+        <ion-fab-list side="top">
+            <button ion-fab color="primary" (click)="ChangePin()"><ion-icon ios="ios-key" md="md-key"></ion-icon> <ion-label>Change Pin</ion-label></button>
+            <button ion-fab color="primary" (click)="Unregister()"><ion-icon ios="ios-trash" md="md-trash"></ion-icon> <ion-label>Unregister</ion-label></button>
+          
+         <!-- <button ion-fab color="primary" (click)="ChangePin()"><ion-icon ios="ios-key" md="md-key"></ion-icon></button>
+          <button ion-fab color="primary" (click)="Unregister()"><ion-icon ios="ios-trash" md="md-trash"></ion-icon></button> -->
+        </ion-fab-list>
+      </ion-fab>
+  
+
+
+  
+   
+</ion-content>

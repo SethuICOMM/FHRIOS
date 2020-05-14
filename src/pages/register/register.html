@@ -1,0 +1,65 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>register</ion-title>
+ 
+</ion-header> -->
+
+
+<ion-content >
+  <ion-item>
+    <img  src="assets/imgs/fhr_onthegologored.png"  id="imgPlacement"  style="width: 90%;height: 100px;border-width: 02px;
+    border-style: solid;padding: 10px; margin-left: 10px;margin-top: 20px; border-color:gray;display: block;border-radius: 10px;">
+    </ion-item>
+  <!-- <img  src="assets/imgs/fhr_onthegologored.png"  id="imgPlacement"  style="width: 70%;height: 100px;border-width: 02px;
+  border-style: solid;padding: 10px; margin-left: 20px;margin-top: 10px; border-color:gray;display: block;border-radius: 10px;">
+   -->
+     <p text-center>Please login to begin using FormulaHR On the Go.</p>
+  
+    
+    <ion-list class="items-middle" text-center>
+      
+      <!-- use the [formGroup] directive to tell Angular that we want to use the registrationForm as the "FormGroup" for this form: -->
+      <form [formGroup]="registrationForm" class="input-border">
+             
+          <ion-item >
+              <ion-label color="ligh-grey" floating>Client ID</ion-label>
+              <ion-input  formControlName="clientID" type="text"  required></ion-input>
+              
+          </ion-item>
+        
+          <ion-item>
+              <ion-label color="ligh-grey" floating>User Name</ion-label>
+              <ion-input  formControlName="userName" type="text"  required></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label color="ligh-grey" floating>Password</ion-label>
+              <ion-input  formControlName="password" type="{{type}}"  required></ion-input>
+              <button *ngIf="!showPass" ion-button clear color="dark" type="button" item-right (click)="showPassword()"> <ion-icon name="ios-eye-off-outline"></ion-icon></button>
+              <button *ngIf="showPass" ion-button clear color="dark" type="button" item-right (click)="showPassword()"> <ion-icon name="ios-eye-outline"></ion-icon></button> 
+          </ion-item>
+          
+         <ion-item>
+                <ion-label color="ligh-grey" floating>Mobile Number</ion-label>
+                <ion-input  formControlName="mobile" type="number" pattern="[0-9]*"  required></ion-input>
+         </ion-item>
+
+          <ion-item>
+            <input type="checkbox" formControlName="isTosRead"><a href="#" (click)="OpenPolicy()"> Terms & condition </a>
+          </ion-item>
+          <!-- We can check if our form is valid: -->
+          
+      </form>
+      <ion-buttons style="padding-left:10px;padding-right:10px;">
+        <button ion-button full  type="submit" [disabled]="!registrationForm.valid" (click)="regForm()">Register</button>
+    </ion-buttons>
+  </ion-list>
+  
+
+</ion-content>
