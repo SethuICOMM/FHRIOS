@@ -1,5 +1,7 @@
 {
-  "name": "FHRIOS",
-  "integrations": {},
-  "type": "angular"
+  "name": "FormulaHR",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
 }

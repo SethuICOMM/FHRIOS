@@ -1,6 +1,6 @@
 webpackJsonp([4],{
 
-/***/ 102:
+/***/ 103:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11,8 +11,8 @@ webpackJsonp([4],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_service_auth_service__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_crypto_js__ = __webpack_require__(96);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_crypto_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_crypto_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__login_login__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_network__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__login_login__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_network__ = __webpack_require__(40);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -171,7 +171,7 @@ var UpdatepinPage = /** @class */ (function () {
     };
     UpdatepinPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-updatepin',template:/*ion-inline-start:"/Users/icommmac/Documents/ionic_3/FormulaHR/src/pages/updatepin/updatepin.html"*/'<!--\n  Generated template for the UpdatepinPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n \n</ion-header>\n\n<ion-content >\n  <ion-item>\n    <img  src="assets/imgs/fhr_onthegologored.png"  id="imgPlacement"  style="width: 90%;height: 100px;border-width: 02px;\n    border-style: solid;padding: 10px; margin-left: 10px;margin-top: 20px; border-color:gray;display: block;border-radius: 10px;">\n    </ion-item>\n    <p text-center>Please generate your PIN.(Pin Should be 5 digit)</p>\n    <form [formGroup]="updatePINForm"  class="input-border">\n        \n    <ion-item style="width:80%;margin-left:10%;">\n        <ion-label color="ligh-grey" floating>New PIN</ion-label>\n        <ion-input formControlName="newpininput" maxlength="5" type="number" pattern="[0-9]*"  required></ion-input> \n    </ion-item>\n    <ion-item style="width:80%;margin-left:10%;">\n      <ion-label color="ligh-grey" floating>Confirm PIN</ion-label>\n      <ion-input formControlName="confirmpininput" maxlength="5" type="number" pattern="[0-9]*"  required></ion-input> \n  </ion-item>\n    <ion-item no-lines style="width:80%;margin-left:10%;">\n        <ion-buttons>\n            <button ion-button full  type="submit"  (click)="updatePINSubmit()">Submit</button>\n        </ion-buttons>\n        </ion-item>\n    </form>\n</ion-content>\n'/*ion-inline-end:"/Users/icommmac/Documents/ionic_3/FormulaHR/src/pages/updatepin/updatepin.html"*/,
+            selector: 'page-updatepin',template:/*ion-inline-start:"/Users/icommmac/Desktop/Rajesh/FHRIOS/src/pages/updatepin/updatepin.html"*/'<!--\n  Generated template for the UpdatepinPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n \n</ion-header>\n\n<ion-content >\n  <ion-item>\n    <img  src="assets/imgs/fhr_onthegologored.png"  id="imgPlacement"  style="width: 90%;height: 100px;border-width: 02px;\n    border-style: solid;padding: 10px; margin-left: 10px;margin-top: 20px; border-color:gray;display: block;border-radius: 10px;">\n    </ion-item>\n    <p text-center>Please generate your PIN.(Pin Should be 5 digit)</p>\n    <form [formGroup]="updatePINForm"  class="input-border">\n        \n    <ion-item style="width:80%;margin-left:10%;">\n        <ion-label color="ligh-grey" floating>New PIN</ion-label>\n        <ion-input formControlName="newpininput" maxlength="5" type="number" pattern="[0-9]*"  required></ion-input> \n    </ion-item>\n    <ion-item style="width:80%;margin-left:10%;">\n      <ion-label color="ligh-grey" floating>Confirm PIN</ion-label>\n      <ion-input formControlName="confirmpininput" maxlength="5" type="number" pattern="[0-9]*"  required></ion-input> \n  </ion-item>\n    <ion-item no-lines style="width:80%;margin-left:10%;">\n        <ion-buttons>\n            <button ion-button full  type="submit"  (click)="updatePINSubmit()">Submit</button>\n        </ion-buttons>\n        </ion-item>\n    </form>\n</ion-content>\n'/*ion-inline-end:"/Users/icommmac/Desktop/Rajesh/FHRIOS/src/pages/updatepin/updatepin.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_network__["a" /* Network */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_3__providers_auth_service_auth_service__["a" /* AuthServiceProvider */]])
     ], UpdatepinPage);
@@ -182,21 +182,22 @@ var UpdatepinPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 103:
+/***/ 104:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_app_version__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_app_version__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_service_auth_service__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_network__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_network__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__otpverify_otpverify__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_crypto_js__ = __webpack_require__(96);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_crypto_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_crypto_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__register_register__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__register_register__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_safari_view_controller__ = __webpack_require__(79);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -215,6 +216,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
  * Generated class for the LoginPage page.
  *
@@ -222,8 +224,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var LoginPage = /** @class */ (function () {
-    function LoginPage(network, navCtrl, navParams, loadingCtrl, toastCtrl, alertCtrl, modalcontroller, appVersion, authservice) {
+    function LoginPage(safariViewController, network, navCtrl, navParams, loadingCtrl, toastCtrl, alertCtrl, modalcontroller, appVersion, authservice) {
         var _this = this;
+        this.safariViewController = safariViewController;
         this.network = network;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
@@ -281,7 +284,32 @@ var LoginPage = /** @class */ (function () {
                     {
                         text: 'Update',
                         handler: function () {
-                            window.open('itms-apps://itunes.apple.com/in/app/formulahr-mobile/id1206429350?mt=8', '_blank', 'location=no,closebuttoncaption=Close');
+                            _this.safariViewController.isAvailable()
+                                .then(function (available) {
+                                if (available) {
+                                    _this.safariViewController.show({
+                                        url: 'itms-apps://itunes.apple.com/in/app/formulahr-mobile/id1206429350?mt=8',
+                                        hidden: false,
+                                        animated: false,
+                                        transition: 'curl',
+                                        enterReaderModeIfAvailable: true,
+                                        tintColor: '#ff0000'
+                                    })
+                                        .subscribe(function (result) {
+                                        if (result.event === 'opened')
+                                            console.log('Opened');
+                                        else if (result.event === 'loaded')
+                                            console.log('Loaded');
+                                        else if (result.event === 'closed')
+                                            console.log('Closed');
+                                    }, function (error) { return console.error(error); });
+                                }
+                                else {
+                                    console.log("================2");
+                                    // use fallback browser, example InAppBrowser
+                                }
+                            });
+                            // window1.open('itms-apps://itunes.apple.com/in/app/formulahr-mobile/id1206429350?mt=8', '_blank', 'location=no,closebuttoncaption=Close');
                             _this.MobileAppLoad();
                         }
                     }],
@@ -297,7 +325,32 @@ var LoginPage = /** @class */ (function () {
                     {
                         text: 'Update',
                         handler: function () {
-                            window.open('itms-apps://itunes.apple.com/in/app/formulahr-mobile/id1206429350?mt=8', '_blank', 'location=no,closebuttoncaption=Close');
+                            _this.safariViewController.isAvailable()
+                                .then(function (available) {
+                                if (available) {
+                                    _this.safariViewController.show({
+                                        url: 'itms-apps://itunes.apple.com/in/app/formulahr-mobile/id1206429350?mt=8',
+                                        hidden: false,
+                                        animated: false,
+                                        transition: 'curl',
+                                        enterReaderModeIfAvailable: true,
+                                        tintColor: '#ff0000'
+                                    })
+                                        .subscribe(function (result) {
+                                        if (result.event === 'opened')
+                                            console.log('Opened');
+                                        else if (result.event === 'loaded')
+                                            console.log('Loaded');
+                                        else if (result.event === 'closed')
+                                            console.log('Closed');
+                                    }, function (error) { return console.error(error); });
+                                }
+                                else {
+                                    console.log("================2");
+                                    // use fallback browser, example InAppBrowser
+                                }
+                            });
+                            //window1.open('itms-apps://itunes.apple.com/in/app/formulahr-mobile/id1206429350?mt=8', '_blank', 'location=no,closebuttoncaption=Close');
                             _this.MobileAppLoad();
                         }
                     }
@@ -573,8 +626,33 @@ var LoginPage = /** @class */ (function () {
                 res = data;
                 if (res.d.ErrFlag == 0) {
                     _this.hideLoading();
-                    var notificationWebURL = window.localStorage.getItem('clientURL') + res.d.PageName + "?SessionKey=" + res.d.SessionKey + "&MobilePin=" + _this.pin + "&param1=" + window.localStorage.getItem('notificationParam');
-                    window.open(notificationWebURL, '_blank', 'location=yes,closebuttoncaption=Close,EnableViewPortScale=yes');
+                    var notificationWebURL_1 = window.localStorage.getItem('clientURL') + res.d.PageName + "?SessionKey=" + res.d.SessionKey + "&MobilePin=" + _this.pin + "&param1=" + window.localStorage.getItem('notificationParam');
+                    _this.safariViewController.isAvailable()
+                        .then(function (available) {
+                        if (available) {
+                            _this.safariViewController.show({
+                                url: notificationWebURL_1,
+                                hidden: false,
+                                animated: false,
+                                transition: 'curl',
+                                enterReaderModeIfAvailable: true,
+                                tintColor: '#ff0000'
+                            })
+                                .subscribe(function (result) {
+                                if (result.event === 'opened')
+                                    console.log('Opened');
+                                else if (result.event === 'loaded')
+                                    console.log('Loaded');
+                                else if (result.event === 'closed')
+                                    console.log('Closed');
+                            }, function (error) { return console.error(error); });
+                        }
+                        else {
+                            console.log("================2");
+                            // use fallback browser, example InAppBrowser
+                        }
+                    });
+                    //  window1.open(notificationWebURL, '_blank', 'location=yes,closebuttoncaption=Close,EnableViewPortScale=yes');
                 }
                 else {
                     _this.hideLoading();
@@ -623,9 +701,9 @@ var LoginPage = /** @class */ (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"/Users/icommmac/Documents/ionic_3/FormulaHR/src/pages/login/login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  \n</ion-header>\n\n<ion-content padding>\n <!-- Generated template for the PinComponent component -->\n<ion-grid>\n    <ion-row>\n        <p style="margin-left: 10px">Please Enter your 5 digit pin</p>\n    </ion-row>\n  <ion-row>\n      <ion-item style="width:90%;margin-left:10%;">\n         \n          <label text-center type="password" style="letter-spacing: 20px;margin-left: 20px;font-weight: bold;"  *ngIf="displaypin">{{displaypin}}</label>\n      </ion-item>\n  </ion-row>\n<ion-row>\n  <ion-col>\n    <button ion-button round large outline (click)="handleinput(\'1\')">1</button>\n  </ion-col>\n  <ion-col>\n      <button ion-button round large outline (click)="handleinput(\'2\')">2</button>\n    </ion-col>\n    <ion-col>\n        <button ion-button round large outline (click)="handleinput(\'3\')">3</button>\n      </ion-col>\n</ion-row>\n<ion-row>\n    <ion-col>\n      <button ion-button round large outline (click)="handleinput(\'4\')">4</button>\n    </ion-col>\n    <ion-col>\n        <button ion-button round large outline (click)="handleinput(\'5\')">5</button>\n      </ion-col>\n      <ion-col>\n          <button ion-button round large outline (click)="handleinput(\'6\')">6</button>\n        </ion-col>\n  </ion-row>\n  <ion-row>\n      <ion-col>\n        <button ion-button round large outline (click)="handleinput(\'7\')">7</button>\n      </ion-col>\n      <ion-col>\n          <button ion-button round large outline (click)="handleinput(\'8\')">8</button>\n        </ion-col>\n        <ion-col>\n            <button ion-button round large outline (click)="handleinput(\'9\')">9</button>\n          </ion-col>\n    </ion-row>\n    <ion-row>\n        <ion-col>\n         \n        </ion-col>\n        <ion-col>\n            <button ion-button round large outline (click)="handleinput(\'0\')">0</button>\n          </ion-col>\n          <ion-col>\n             \n            </ion-col>\n      </ion-row>\n      <ion-row>\n            <ion-col>\n                <button ion-button clear large no-padding (click)="handleinput(\'clear\')">Clear</button>\n            </ion-col>\n            <ion-col>\n             \n            </ion-col>\n            <ion-col>\n                <button ion-button clear large  (click)="pinverify()">OK</button>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col>\n               \n            </ion-col>\n            <ion-col>\n                <button ion-button clear large  (click)="Forgotpin()">Forgot Pin</button>\n            </ion-col>\n            <ion-col>\n               \n            </ion-col>\n        </ion-row>\n</ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/icommmac/Documents/ionic_3/FormulaHR/src/pages/login/login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"/Users/icommmac/Desktop/Rajesh/FHRIOS/src/pages/login/login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  \n</ion-header>\n\n<ion-content padding>\n <!-- Generated template for the PinComponent component -->\n<ion-grid>\n    <ion-row>\n        <p style="margin-left: 10px">Please Enter your 5 digit pin</p>\n    </ion-row>\n  <ion-row>\n      <ion-item style="width:90%;margin-left:10%;">\n         \n          <label text-center type="password" style="letter-spacing: 20px;margin-left: 20px;font-weight: bold;"  *ngIf="displaypin">{{displaypin}}</label>\n      </ion-item>\n  </ion-row>\n<ion-row>\n  <ion-col>\n    <button ion-button round large outline (click)="handleinput(\'1\')">1</button>\n  </ion-col>\n  <ion-col>\n      <button ion-button round large outline (click)="handleinput(\'2\')">2</button>\n    </ion-col>\n    <ion-col>\n        <button ion-button round large outline (click)="handleinput(\'3\')">3</button>\n      </ion-col>\n</ion-row>\n<ion-row>\n    <ion-col>\n      <button ion-button round large outline (click)="handleinput(\'4\')">4</button>\n    </ion-col>\n    <ion-col>\n        <button ion-button round large outline (click)="handleinput(\'5\')">5</button>\n      </ion-col>\n      <ion-col>\n          <button ion-button round large outline (click)="handleinput(\'6\')">6</button>\n        </ion-col>\n  </ion-row>\n  <ion-row>\n      <ion-col>\n        <button ion-button round large outline (click)="handleinput(\'7\')">7</button>\n      </ion-col>\n      <ion-col>\n          <button ion-button round large outline (click)="handleinput(\'8\')">8</button>\n        </ion-col>\n        <ion-col>\n            <button ion-button round large outline (click)="handleinput(\'9\')">9</button>\n          </ion-col>\n    </ion-row>\n    <ion-row>\n        <ion-col>\n         \n        </ion-col>\n        <ion-col>\n            <button ion-button round large outline (click)="handleinput(\'0\')">0</button>\n          </ion-col>\n          <ion-col>\n             \n            </ion-col>\n      </ion-row>\n      <ion-row>\n            <ion-col>\n                <button ion-button clear large no-padding (click)="handleinput(\'clear\')">Clear</button>\n            </ion-col>\n            <ion-col>\n             \n            </ion-col>\n            <ion-col>\n                <button ion-button clear large  (click)="pinverify()">OK</button>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col>\n               \n            </ion-col>\n            <ion-col>\n                <button ion-button clear large  (click)="Forgotpin()">Forgot Pin</button>\n            </ion-col>\n            <ion-col>\n               \n            </ion-col>\n        </ion-row>\n</ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/icommmac/Desktop/Rajesh/FHRIOS/src/pages/login/login.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__ionic_native_network__["a" /* Network */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_app_version__["a" /* AppVersion */], __WEBPACK_IMPORTED_MODULE_3__providers_auth_service_auth_service__["a" /* AuthServiceProvider */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_9__ionic_native_safari_view_controller__["a" /* SafariViewController */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_network__["a" /* Network */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_app_version__["a" /* AppVersion */], __WEBPACK_IMPORTED_MODULE_3__providers_auth_service_auth_service__["a" /* AuthServiceProvider */]])
     ], LoginPage);
     return LoginPage;
 }());
@@ -634,7 +712,7 @@ var LoginPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 211:
+/***/ 212:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -647,16 +725,16 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 211;
+webpackEmptyAsyncContext.id = 212;
 
 /***/ }),
 
-/***/ 254:
+/***/ 255:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/login/login.module": [
-		732,
+		733,
 		3
 	],
 	"../pages/otpverify/otpverify.module": [
@@ -664,11 +742,11 @@ var map = {
 		2
 	],
 	"../pages/register/register.module": [
-		729,
+		731,
 		1
 	],
 	"../pages/updatepin/updatepin.module": [
-		731,
+		732,
 		0
 	]
 };
@@ -683,12 +761,12 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 254;
+webpackAsyncContext.id = 255;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 267:
+/***/ 268:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -698,13 +776,14 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_crypto_js__ = __webpack_require__(96);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_crypto_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_crypto_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_service_auth_service__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__register_register__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_diagnostic__ = __webpack_require__(268);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_geolocation__ = __webpack_require__(269);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_globalization__ = __webpack_require__(270);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_camera__ = __webpack_require__(271);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_network__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_native_geocoder__ = __webpack_require__(272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__register_register__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_diagnostic__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_geolocation__ = __webpack_require__(270);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_globalization__ = __webpack_require__(271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_camera__ = __webpack_require__(272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_network__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_safari_view_controller__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_native_geocoder__ = __webpack_require__(273);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -725,8 +804,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var HomePage = /** @class */ (function () {
-    function HomePage(network, camera, globalization, nativeGeocoder, geolocation, platform, diagnostic, navCtrl, navParams, loadingCtrl, toastCtrl, alertCtrl, authservice) {
+    function HomePage(safariViewController, network, camera, globalization, nativeGeocoder, geolocation, platform, diagnostic, navCtrl, navParams, loadingCtrl, toastCtrl, alertCtrl, authservice) {
+        this.safariViewController = safariViewController;
         this.network = network;
         this.camera = camera;
         this.globalization = globalization;
@@ -1239,8 +1320,33 @@ var HomePage = /** @class */ (function () {
                     //alert(res.d.ErrFlag);
                     if (res_2.d.ErrFlag == 0) {
                         _this.hideLoading();
-                        var mainURL = window.localStorage.getItem('clientURL') + res_2.d.PageName + "?SessionKey=" + res_2.d.SessionKey + "&MobilePin=" + _this.pin;
-                        window.open(mainURL, '_blank', 'location=no,closebuttoncaption=Close');
+                        var mainURL_1 = window.localStorage.getItem('clientURL') + res_2.d.PageName + "?SessionKey=" + res_2.d.SessionKey + "&MobilePin=" + _this.pin;
+                        _this.safariViewController.isAvailable()
+                            .then(function (available) {
+                            if (available) {
+                                _this.safariViewController.show({
+                                    url: mainURL_1,
+                                    hidden: false,
+                                    animated: false,
+                                    transition: 'curl',
+                                    enterReaderModeIfAvailable: true,
+                                    tintColor: '#ff0000'
+                                })
+                                    .subscribe(function (result) {
+                                    if (result.event === 'opened')
+                                        console.log('Opened');
+                                    else if (result.event === 'loaded')
+                                        console.log('Loaded');
+                                    else if (result.event === 'closed')
+                                        console.log('Closed');
+                                }, function (error) { return console.error(error); });
+                            }
+                            else {
+                                console.log("================2");
+                                // use fallback browser, example InAppBrowser
+                            }
+                        });
+                        //window1.open(mainURL, '_blank', 'location=no,closebuttoncaption=Close');
                         //   let target : string = '_self',
                         //     opts   : string = 'clearcache=yes,clearsessioncache=yes,toolbar=yes,location=yes';
                         // this.iab.create(mainURL, target, opts);
@@ -1637,8 +1743,33 @@ var HomePage = /** @class */ (function () {
                 res = data;
                 if (res.d.ErrFlag == 0) {
                     _this.hideLoading();
-                    var notificationWebURL = window.localStorage.getItem('clientURL') + res.d.PageName + "?SessionKey=" + res.d.SessionKey + "&MobilePin=" + _this.pin + "&param1=" + window.localStorage.getItem('notificationParam');
-                    window.open(notificationWebURL, '_blank', 'location=yes,closebuttoncaption=Close,EnableViewPortScale=yes');
+                    var notificationWebURL_1 = window.localStorage.getItem('clientURL') + res.d.PageName + "?SessionKey=" + res.d.SessionKey + "&MobilePin=" + _this.pin + "&param1=" + window.localStorage.getItem('notificationParam');
+                    _this.safariViewController.isAvailable()
+                        .then(function (available) {
+                        if (available) {
+                            _this.safariViewController.show({
+                                url: notificationWebURL_1,
+                                hidden: false,
+                                animated: false,
+                                transition: 'curl',
+                                enterReaderModeIfAvailable: true,
+                                tintColor: '#ff0000'
+                            })
+                                .subscribe(function (result) {
+                                if (result.event === 'opened')
+                                    console.log('Opened');
+                                else if (result.event === 'loaded')
+                                    console.log('Loaded');
+                                else if (result.event === 'closed')
+                                    console.log('Closed');
+                            }, function (error) { return console.error(error); });
+                        }
+                        else {
+                            console.log("===============3");
+                            // use fallback browser, example InAppBrowser
+                        }
+                    });
+                    //     window1.open(notificationWebURL, '_blank', 'location=yes,closebuttoncaption=Close,EnableViewPortScale=yes');
                 }
                 else {
                     _this.hideLoading();
@@ -1652,9 +1783,9 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/icommmac/Documents/ionic_3/FormulaHR/src/pages/home/home.html"*/'<ion-header>\n  \n</ion-header>\n\n<ion-content>\n  <ion-item>\n      <div *ngIf="clientLogo">\n    <img  src="{{clientLogo}}"  id="imgPlacement"  style="width: 100%;border-width: 02px;\n    border-style: solid;padding: 10px; margin-left: 10px;margin-top: 20px; border-color:gray;display: block;border-radius: 10px;">\n   </div>  \n  </ion-item>\n\n    \n<ion-item>\n      <div class=\'container2\'>\n        <div class="left">\n            <div *ngIf="PFP">\n                <img style="border-radius: 50%;" src="{{PFP}}" class=\'iconDetails\'>\n            </div>\n                    \n                 \n                     <div style="margin-left: 20px; margin-bottom: 20px;">\n                       <h4 style="font-weight: bold;">Welcome</h4>\n                       <h4 style="font-weight: bold;" *ngIf="Name">{{Name}}</h4>\n                     </div>\n          \n        </div>	\n    </div>\n  </ion-item>\n  <ion-grid >\n    \n    <ion-row>\n      <ion-col >\n          <button [disabled]="!CheckinDisabled" [hidden]="!checkin_hide" (click)="Checkin()" style="width:40px;\n          height: 40px;\n          background-color:#69B31F;\n          border-radius: 50%;\n          font-size: 20px !important;text-align:center;"> <ion-icon class="light center" name="log-in"></ion-icon> </button>\n          \n      </ion-col>\n      <ion-col>\n          <h6  style="font-size:10px;" *ngIf="CheckInTime" >{{CheckInTime}}</h6>\n         \n      </ion-col>\n      <ion-col>\n          <h6  style="font-size:10px;" *ngIf="CheckInAddress">{{CheckInAddress}}</h6>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n        <ion-col>\n        <button [disabled]="!CheckoutDisabled" [hidden]="!checkout_hide" (click)="Checkin()" style="width:40px;\n        height: 40px;\n        background-color:#F64747;\n        font-size: 20px !important;\n        border-radius: 50%;\n        margin-top:5px; text-align:center;"> <ion-icon class="light center" name="log-out"></ion-icon></button>\n      \n      </ion-col>\n      <ion-col>\n          <h6  style="font-size:10px;" *ngIf="CheckOutTime">{{CheckOutTime}}</h6>\n         \n      </ion-col>\n      <ion-col>\n          <h6  style="font-size:10px;" *ngIf="CheckOutAddress">{{CheckOutAddress}}</h6>\n        </ion-col>\n    </ion-row>\n    </ion-grid>\n\n    <ion-buttons style="padding-left: 50px; padding-right: 80px;" >\n        \n        <button  ion-button full  type="submit"  (click)="homeclick()"><ion-icon name="home"></ion-icon>  Home</button>\n    </ion-buttons>\n\n\n    <ion-fab right bottom>\n        <button ion-fab color="primary"><ion-icon name="construct"></ion-icon></button>\n        <ion-fab-list side="top">\n            <button ion-fab color="primary" (click)="ChangePin()"><ion-icon ios="ios-key" md="md-key"></ion-icon> <ion-label>Change Pin</ion-label></button>\n            <button ion-fab color="primary" (click)="Unregister()"><ion-icon ios="ios-trash" md="md-trash"></ion-icon> <ion-label>Unregister</ion-label></button>\n          \n         <!-- <button ion-fab color="primary" (click)="ChangePin()"><ion-icon ios="ios-key" md="md-key"></ion-icon></button>\n          <button ion-fab color="primary" (click)="Unregister()"><ion-icon ios="ios-trash" md="md-trash"></ion-icon></button> -->\n        </ion-fab-list>\n      </ion-fab>\n  \n\n\n  \n   \n</ion-content>\n'/*ion-inline-end:"/Users/icommmac/Documents/ionic_3/FormulaHR/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/icommmac/Desktop/Rajesh/FHRIOS/src/pages/home/home.html"*/'<ion-header>\n  \n</ion-header>\n\n<ion-content>\n  <ion-item>\n      <div *ngIf="clientLogo">\n    <img  src="{{clientLogo}}"  id="imgPlacement"  style="width: 100%;border-width: 02px;\n    border-style: solid;padding: 10px; margin-left: 10px;margin-top: 20px; border-color:gray;display: block;border-radius: 10px;">\n   </div>  \n  </ion-item>\n\n    \n<ion-item>\n      <div class=\'container2\'>\n        <div class="left">\n            <div *ngIf="PFP">\n                <img style="border-radius: 50%;" src="{{PFP}}" class=\'iconDetails\'>\n            </div>\n                    \n                 \n                     <div style="margin-left: 20px; margin-bottom: 20px;">\n                       <h4 style="font-weight: bold;">Welcome</h4>\n                       <h4 style="font-weight: bold;" *ngIf="Name">{{Name}}</h4>\n                     </div>\n          \n        </div>	\n    </div>\n  </ion-item>\n  <ion-grid >\n    \n    <ion-row>\n      <ion-col >\n          <button [disabled]="!CheckinDisabled" [hidden]="!checkin_hide" (click)="Checkin()" style="width:40px;\n          height: 40px;\n          background-color:#69B31F;\n          border-radius: 50%;\n          font-size: 20px !important;text-align:center;"> <ion-icon class="light center" name="log-in"></ion-icon> </button>\n          \n      </ion-col>\n      <ion-col>\n          <h6  style="font-size:10px;" *ngIf="CheckInTime" >{{CheckInTime}}</h6>\n         \n      </ion-col>\n      <ion-col>\n          <h6  style="font-size:10px;" *ngIf="CheckInAddress">{{CheckInAddress}}</h6>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n        <ion-col>\n        <button [disabled]="!CheckoutDisabled" [hidden]="!checkout_hide" (click)="Checkin()" style="width:40px;\n        height: 40px;\n        background-color:#F64747;\n        font-size: 20px !important;\n        border-radius: 50%;\n        margin-top:5px; text-align:center;"> <ion-icon class="light center" name="log-out"></ion-icon></button>\n      \n      </ion-col>\n      <ion-col>\n          <h6  style="font-size:10px;" *ngIf="CheckOutTime">{{CheckOutTime}}</h6>\n         \n      </ion-col>\n      <ion-col>\n          <h6  style="font-size:10px;" *ngIf="CheckOutAddress">{{CheckOutAddress}}</h6>\n        </ion-col>\n    </ion-row>\n    </ion-grid>\n\n    <ion-buttons style="padding-left: 50px; padding-right: 80px;" >\n        \n        <button  ion-button full  type="submit"  (click)="homeclick()"><ion-icon name="home"></ion-icon>  Home</button>\n    </ion-buttons>\n\n\n    <ion-fab right bottom>\n        <button ion-fab color="primary"><ion-icon name="construct"></ion-icon></button>\n        <ion-fab-list side="top">\n            <button ion-fab color="primary" (click)="ChangePin()"><ion-icon ios="ios-key" md="md-key"></ion-icon> <ion-label>Change Pin</ion-label></button>\n            <button ion-fab color="primary" (click)="Unregister()"><ion-icon ios="ios-trash" md="md-trash"></ion-icon> <ion-label>Unregister</ion-label></button>\n          \n         <!-- <button ion-fab color="primary" (click)="ChangePin()"><ion-icon ios="ios-key" md="md-key"></ion-icon></button>\n          <button ion-fab color="primary" (click)="Unregister()"><ion-icon ios="ios-trash" md="md-trash"></ion-icon></button> -->\n        </ion-fab-list>\n      </ion-fab>\n  \n\n\n  \n   \n</ion-content>\n'/*ion-inline-end:"/Users/icommmac/Desktop/Rajesh/FHRIOS/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_9__ionic_native_network__["a" /* Network */], __WEBPACK_IMPORTED_MODULE_8__ionic_native_camera__["a" /* Camera */], __WEBPACK_IMPORTED_MODULE_7__ionic_native_globalization__["a" /* Globalization */], __WEBPACK_IMPORTED_MODULE_10__ionic_native_native_geocoder__["a" /* NativeGeocoder */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_geolocation__["a" /* Geolocation */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_diagnostic__["a" /* Diagnostic */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_3__providers_auth_service_auth_service__["a" /* AuthServiceProvider */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_10__ionic_native_safari_view_controller__["a" /* SafariViewController */], __WEBPACK_IMPORTED_MODULE_9__ionic_native_network__["a" /* Network */], __WEBPACK_IMPORTED_MODULE_8__ionic_native_camera__["a" /* Camera */], __WEBPACK_IMPORTED_MODULE_7__ionic_native_globalization__["a" /* Globalization */], __WEBPACK_IMPORTED_MODULE_11__ionic_native_native_geocoder__["a" /* NativeGeocoder */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_geolocation__["a" /* Geolocation */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_diagnostic__["a" /* Diagnostic */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_3__providers_auth_service_auth_service__["a" /* AuthServiceProvider */]])
     ], HomePage);
     return HomePage;
 }());
@@ -1663,18 +1794,18 @@ var HomePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 314:
+/***/ 315:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SplashPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_register__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_register__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__otpverify_otpverify__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__updatepin_updatepin__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__login_login__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_network__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__updatepin_updatepin__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__login_login__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_network__ = __webpack_require__(40);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1741,7 +1872,7 @@ var SplashPage = /** @class */ (function () {
     };
     SplashPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-splash',template:/*ion-inline-start:"/Users/icommmac/Documents/ionic_3/FormulaHR/src/pages/splash/splash.html"*/'\n  <ion-content>\n      <div *ngIf="clientLogo">\n          <img src="{{clientLogo}}"   id="imgPlacement"  style="align-items: center; width:100%; margin-top:50%">\n         </div> \n    \n    <img src="assets/imgs/loading.gif"    style="align-items: center; width:20%; height:20%; margin-top:0%;margin-left:40%">\n  </ion-content>\n\n'/*ion-inline-end:"/Users/icommmac/Documents/ionic_3/FormulaHR/src/pages/splash/splash.html"*/
+            selector: 'page-splash',template:/*ion-inline-start:"/Users/icommmac/Desktop/Rajesh/FHRIOS/src/pages/splash/splash.html"*/'\n  <ion-content>\n      <div *ngIf="clientLogo">\n          <img src="{{clientLogo}}"   id="imgPlacement"  style="align-items: center; width:100%; margin-top:50%">\n         </div> \n    \n    <img src="assets/imgs/loading.gif"    style="align-items: center; width:20%; height:20%; margin-top:0%;margin-left:40%">\n  </ion-content>\n\n'/*ion-inline-end:"/Users/icommmac/Desktop/Rajesh/FHRIOS/src/pages/splash/splash.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_network__["a" /* Network */]])
     ], SplashPage);
@@ -1752,13 +1883,13 @@ var SplashPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 317:
+/***/ 318:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(318);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(419);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(319);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(420);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -1766,7 +1897,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 419:
+/***/ 420:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1774,36 +1905,38 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(312);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(313);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(725);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_splash_splash__ = __webpack_require__(314);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_register_register__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_app_version__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_device__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(313);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(314);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(726);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_splash_splash__ = __webpack_require__(315);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_register_register__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_app_version__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_device__ = __webpack_require__(161);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_auth_service_auth_service__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_common_http__ = __webpack_require__(256);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_toast_ngx__ = __webpack_require__(726);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_common_http__ = __webpack_require__(265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_toast_ngx__ = __webpack_require__(727);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_otpverify_otpverify__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_updatepin_updatepin__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_network__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_login_login__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_diagnostic__ = __webpack_require__(268);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_location_accuracy_ngx__ = __webpack_require__(727);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_geolocation__ = __webpack_require__(269);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ionic_native_native_geocoder__ = __webpack_require__(272);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_native_globalization__ = __webpack_require__(270);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_camera__ = __webpack_require__(271);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_push__ = __webpack_require__(315);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_fcm__ = __webpack_require__(728);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__ionic_native_keyboard__ = __webpack_require__(316);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_updatepin_updatepin__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_network__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_login_login__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_diagnostic__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_location_accuracy_ngx__ = __webpack_require__(728);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_geolocation__ = __webpack_require__(270);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ionic_native_native_geocoder__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_native_globalization__ = __webpack_require__(271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_camera__ = __webpack_require__(272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_push__ = __webpack_require__(316);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_fcm__ = __webpack_require__(729);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__ionic_native_keyboard__ = __webpack_require__(317);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__ionic_native_safari_view_controller__ = __webpack_require__(79);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -1847,8 +1980,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */], __WEBPACK_IMPORTED_MODULE_12__angular_common_http__["b" /* HttpClientModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/otpverify/otpverify.module#OtpverifyPageModule', name: 'OtpverifyPage', segment: 'otpverify', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/updatepin/updatepin.module#UpdatepinPageModule', name: 'UpdatepinPage', segment: 'updatepin', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] }
                     ]
@@ -1876,7 +2009,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_16__ionic_native_network__["a" /* Network */],
                 __WEBPACK_IMPORTED_MODULE_18__ionic_native_diagnostic__["a" /* Diagnostic */], __WEBPACK_IMPORTED_MODULE_23__ionic_native_camera__["a" /* Camera */],
                 { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] },
-                __WEBPACK_IMPORTED_MODULE_11__providers_auth_service_auth_service__["a" /* AuthServiceProvider */]
+                __WEBPACK_IMPORTED_MODULE_11__providers_auth_service_auth_service__["a" /* AuthServiceProvider */],
+                __WEBPACK_IMPORTED_MODULE_27__ionic_native_safari_view_controller__["a" /* SafariViewController */]
             ]
         })
     ], AppModule);
@@ -1892,11 +2026,11 @@ var AppModule = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(256);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(265);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(447);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(685);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_network__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_network__ = __webpack_require__(40);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2124,24 +2258,25 @@ var AuthServiceProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 725:
+/***/ 726:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(313);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(312);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_device___ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_splash_splash__ = __webpack_require__(314);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_app_version__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_network__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_push__ = __webpack_require__(315);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(314);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(313);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_device___ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_splash_splash__ = __webpack_require__(315);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_app_version__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_network__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_push__ = __webpack_require__(316);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_crypto_js__ = __webpack_require__(96);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_crypto_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_crypto_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_auth_service_auth_service__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_keyboard__ = __webpack_require__(316);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_keyboard__ = __webpack_require__(317);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_safari_view_controller__ = __webpack_require__(79);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2163,9 +2298,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var MyApp = /** @class */ (function () {
-    function MyApp(keyboard, toastCtrl, authservice, push, network, alertCtrl, platform, device, statusBar, appVersion, splashScreen) {
+    function MyApp(safariViewController, keyboard, toastCtrl, authservice, push, network, alertCtrl, platform, device, statusBar, appVersion, splashScreen) {
         var _this = this;
+        this.safariViewController = safariViewController;
         this.keyboard = keyboard;
         this.toastCtrl = toastCtrl;
         this.authservice = authservice;
@@ -2264,8 +2401,33 @@ var MyApp = /** @class */ (function () {
                                                 res = data;
                                                 if (res.d.ErrFlag == 0) {
                                                     // this.hideLoading();
-                                                    var notificationWebURL = window.localStorage.getItem('clientURL') + res.d.PageName + "?SessionKey=" + res.d.SessionKey + "&MobilePin=" + _this.pin + "&param1=" + window.localStorage.getItem('notificationParam');
-                                                    window.open(notificationWebURL, '_blank', 'location=yes,closebuttoncaption=Close,EnableViewPortScale=yes');
+                                                    var notificationWebURL_1 = window.localStorage.getItem('clientURL') + res.d.PageName + "?SessionKey=" + res.d.SessionKey + "&MobilePin=" + _this.pin + "&param1=" + window.localStorage.getItem('notificationParam');
+                                                    _this.safariViewController.isAvailable()
+                                                        .then(function (available) {
+                                                        if (available) {
+                                                            _this.safariViewController.show({
+                                                                url: notificationWebURL_1,
+                                                                hidden: false,
+                                                                animated: false,
+                                                                transition: 'curl',
+                                                                enterReaderModeIfAvailable: true,
+                                                                tintColor: '#ff0000'
+                                                            })
+                                                                .subscribe(function (result) {
+                                                                if (result.event === 'opened')
+                                                                    console.log('Opened');
+                                                                else if (result.event === 'loaded')
+                                                                    console.log('Loaded');
+                                                                else if (result.event === 'closed')
+                                                                    console.log('Closed');
+                                                            }, function (error) { return console.error(error); });
+                                                        }
+                                                        else {
+                                                            console.log("==================== 1 ");
+                                                            // use fallback browser, example InAppBrowser
+                                                            // window1.open(notificationWebURL, '_blank', 'location=yes,closebuttoncaption=Close,EnableViewPortScale=yes');
+                                                        }
+                                                    });
                                                 }
                                                 else {
                                                     //  this.hideLoading();
@@ -2310,212 +2472,14 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/icommmac/Documents/ionic_3/FormulaHR/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/icommmac/Documents/ionic_3/FormulaHR/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/icommmac/Desktop/Rajesh/FHRIOS/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/icommmac/Desktop/Rajesh/FHRIOS/src/app/app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_11__ionic_native_keyboard__["a" /* Keyboard */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */], __WEBPACK_IMPORTED_MODULE_10__providers_auth_service_auth_service__["a" /* AuthServiceProvider */], __WEBPACK_IMPORTED_MODULE_8__ionic_native_push__["a" /* Push */], __WEBPACK_IMPORTED_MODULE_7__ionic_native_network__["a" /* Network */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_device___["a" /* Device */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_app_version__["a" /* AppVersion */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_12__ionic_native_safari_view_controller__["a" /* SafariViewController */], __WEBPACK_IMPORTED_MODULE_11__ionic_native_keyboard__["a" /* Keyboard */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */], __WEBPACK_IMPORTED_MODULE_10__providers_auth_service_auth_service__["a" /* AuthServiceProvider */], __WEBPACK_IMPORTED_MODULE_8__ionic_native_push__["a" /* Push */], __WEBPACK_IMPORTED_MODULE_7__ionic_native_network__["a" /* Network */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_device___["a" /* Device */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_app_version__["a" /* AppVersion */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
 }());
 
 //# sourceMappingURL=app.component.js.map
-
-/***/ }),
-
-/***/ 79:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_app_version__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_device__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_auth_service_auth_service__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__otpverify_otpverify__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_network__ = __webpack_require__(39);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-
-
-/**
- * Generated class for the RegisterPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var RegisterPage = /** @class */ (function () {
-    function RegisterPage(alertCtrl, network, device, navCtrl, toastCtrl, authservice, loadingCtrl, navParams, appVersion) {
-        var _this = this;
-        this.alertCtrl = alertCtrl;
-        this.network = network;
-        this.device = device;
-        this.navCtrl = navCtrl;
-        this.toastCtrl = toastCtrl;
-        this.authservice = authservice;
-        this.loadingCtrl = loadingCtrl;
-        this.navParams = navParams;
-        this.appVersion = appVersion;
-        this.type = 'password';
-        this.showPass = false;
-        //console.log('Device model is: ' + this.device.model);
-        this.registrationForm = new __WEBPACK_IMPORTED_MODULE_4__angular_forms__["b" /* FormGroup */]({
-            clientID: new __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormControl */]('', [__WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].required]),
-            userName: new __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormControl */]('', [__WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].required]),
-            password: new __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormControl */]('', [__WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].required]),
-            mobile: new __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormControl */]('', [__WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].minLength(10), __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].maxLength(12)]),
-            isTosRead: new __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormControl */](false, [__WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].requiredTrue])
-        });
-        //console.log(this.registrationForm.value.clientID);
-        console.log(this.registrationForm);
-        this.navCtrl.swipeBackEnabled = false;
-        //network
-        var disconnectSubscription = this.network.onDisconnect().subscribe(function () {
-            var toast = _this.toastCtrl.create({
-                message: 'Please check your internet connection. And try again',
-                duration: 3000,
-                position: 'bottom'
-            });
-            toast.onDidDismiss(function () {
-                console.log('Dismissed toast');
-            });
-            toast.present();
-        });
-        // watch network for a connection
-        var connectSubscription = this.network.onConnect().subscribe(function () {
-            var toast = _this.toastCtrl.create({
-                message: 'Internet connected!',
-                duration: 3000,
-                position: 'bottom'
-            });
-            toast.onDidDismiss(function () {
-                console.log('Dismissed toast');
-            });
-            toast.present();
-        });
-    }
-    RegisterPage.prototype.showAlert = function (title, subtitle, alertcode) {
-        var _this = this;
-        if (alertcode == 1) {
-            var alert_1 = this.alertCtrl.create({
-                title: title,
-                subTitle: subtitle,
-                buttons: [
-                    {
-                        text: 'Retry',
-                        handler: function () {
-                            if (_this.authservice.checkNetwork()) {
-                                _this.navCtrl.push(_this.navCtrl.getActive().component);
-                            }
-                            else {
-                                _this.showAlert("Internet not available", "Cross check your internet connectivity and try again.", 1);
-                            }
-                            // this.navCtrl.swipeBackEnabled = false;
-                            // this.MobileAppLoad();
-                        }
-                    }
-                ],
-                enableBackdropDismiss: false // <- Here! :)
-            });
-            alert_1.present();
-        }
-    };
-    RegisterPage.prototype.showToast = function (message) {
-        var toast = this.toastCtrl.create({
-            message: message,
-            duration: 3000,
-            position: 'bottom'
-        });
-        toast.onDidDismiss(function () {
-            console.log('Dismissed toast');
-        });
-        toast.present();
-    };
-    RegisterPage.prototype.showLoading = function () {
-        this.loading = this.loadingCtrl.create({
-            content: 'Please wait...'
-        });
-        this.loading.present();
-    };
-    RegisterPage.prototype.hideLoading = function () {
-        this.loading.dismiss();
-    };
-    RegisterPage.prototype.showPassword = function () {
-        this.showPass = !this.showPass;
-        if (this.showPass) {
-            this.type = 'text';
-        }
-        else {
-            this.type = 'password';
-        }
-    };
-    RegisterPage.prototype.regForm = function () {
-        var _this = this;
-        if (this.network.type == 'none') {
-            this.showToast('Please check your internet connection. And try again');
-        }
-        else {
-            this.showLoading();
-            this.userdata = {
-                CompanyId: this.registrationForm.value.clientID,
-                UserName: this.registrationForm.value.userName,
-                Password: this.registrationForm.value.password,
-                MobileNumber: this.registrationForm.value.mobile,
-                RegistrationId: window.localStorage.getItem('Token'),
-                VersionName: window.localStorage.getItem('buildVersion'),
-                DeviceName: 'iOS',
-                ModalName: 'iOS',
-                DeviceUniqueID: this.device.uuid
-            };
-            console.log(JSON.stringify(this.userdata));
-            //alert(this.registrationForm.value.clientID);
-            //this.showLoading();
-            //alert(JSON.stringify(this.userdata));
-            this.authservice.addUser(JSON.stringify(this.userdata))
-                .then(function (data) {
-                _this.res = data;
-                if (_this.res.d.ErrFlag == 0) {
-                    _this.hideLoading();
-                    window.localStorage.setItem('isregistered', '1');
-                    window.localStorage.setItem('clientURL', _this.res.d.URL);
-                    _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__otpverify_otpverify__["a" /* OtpverifyPage */]);
-                }
-                else {
-                    _this.hideLoading();
-                    _this.showToast(_this.res.d.ErrMessage);
-                }
-                //alert(JSON.stringify(this.res.d));
-                console.log(JSON.stringify(_this.res.d));
-            });
-        }
-    };
-    RegisterPage.prototype.OpenPolicy = function () {
-        window.open('http://www.formulahr.com/privacy_policy.html', '_blank', 'location=no,closebuttoncaption=Close');
-    };
-    RegisterPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-register',template:/*ion-inline-start:"/Users/icommmac/Documents/ionic_3/FormulaHR/src/pages/register/register.html"*/'<!--\n  Generated template for the RegisterPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<!-- <ion-header>\n  <ion-navbar>\n    <ion-title>register</ion-title>\n \n</ion-header> -->\n\n\n<ion-content >\n  <ion-item>\n    <img  src="assets/imgs/fhr_onthegologored.png"  id="imgPlacement"  style="width: 90%;height: 100px;border-width: 02px;\n    border-style: solid;padding: 10px; margin-left: 10px;margin-top: 20px; border-color:gray;display: block;border-radius: 10px;">\n    </ion-item>\n  <!-- <img  src="assets/imgs/fhr_onthegologored.png"  id="imgPlacement"  style="width: 70%;height: 100px;border-width: 02px;\n  border-style: solid;padding: 10px; margin-left: 20px;margin-top: 10px; border-color:gray;display: block;border-radius: 10px;">\n   -->\n     <p text-center>Please login to begin using FormulaHR On the Go.</p>\n  \n    \n    <ion-list class="items-middle" text-center>\n      \n      <!-- use the [formGroup] directive to tell Angular that we want to use the registrationForm as the "FormGroup" for this form: -->\n      <form [formGroup]="registrationForm" class="input-border">\n             \n          <ion-item >\n              <ion-label color="ligh-grey" floating>Client ID</ion-label>\n              <ion-input  formControlName="clientID" type="text"  required></ion-input>\n              \n          </ion-item>\n        \n          <ion-item>\n              <ion-label color="ligh-grey" floating>User Name</ion-label>\n              <ion-input  formControlName="userName" type="text"  required></ion-input>\n          </ion-item>\n\n          <ion-item>\n              <ion-label color="ligh-grey" floating>Password</ion-label>\n              <ion-input  formControlName="password" type="{{type}}"  required></ion-input>\n              <button *ngIf="!showPass" ion-button clear color="dark" type="button" item-right (click)="showPassword()"> <ion-icon name="ios-eye-off-outline"></ion-icon></button>\n              <button *ngIf="showPass" ion-button clear color="dark" type="button" item-right (click)="showPassword()"> <ion-icon name="ios-eye-outline"></ion-icon></button> \n          </ion-item>\n          \n         <ion-item>\n                <ion-label color="ligh-grey" floating>Mobile Number</ion-label>\n                <ion-input  formControlName="mobile" type="number" pattern="[0-9]*"  required></ion-input>\n         </ion-item>\n\n          <ion-item>\n            <input type="checkbox" formControlName="isTosRead"><a href="#" (click)="OpenPolicy()"> Terms & condition </a>\n          </ion-item>\n          <!-- We can check if our form is valid: -->\n          \n      </form>\n      <ion-buttons style="padding-left:10px;padding-right:10px;">\n        <button ion-button full  type="submit" [disabled]="!registrationForm.valid" (click)="regForm()">Register</button>\n    </ion-buttons>\n  </ion-list>\n  \n\n</ion-content>\n'/*ion-inline-end:"/Users/icommmac/Documents/ionic_3/FormulaHR/src/pages/register/register.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_7__ionic_native_network__["a" /* Network */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_device__["a" /* Device */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */], __WEBPACK_IMPORTED_MODULE_5__providers_auth_service_auth_service__["a" /* AuthServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_app_version__["a" /* AppVersion */]])
-    ], RegisterPage);
-    return RegisterPage;
-}());
-
-//# sourceMappingURL=register.js.map
 
 /***/ }),
 
@@ -2527,11 +2491,11 @@ var RegisterPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__ = __webpack_require__(451);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__ = __webpack_require__(440);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_auth_service_auth_service__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__updatepin_updatepin__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__updatepin_updatepin__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2738,7 +2702,7 @@ var OtpverifyPage = /** @class */ (function () {
     };
     OtpverifyPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-otpverify',template:/*ion-inline-start:"/Users/icommmac/Documents/ionic_3/FormulaHR/src/pages/otpverify/otpverify.html"*/'<!--\n  Generated template for the OtpverifyPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  \n</ion-header>\n\n<ion-content >\n  <ion-item>\n  <img  src="assets/imgs/fhr_onthegologored.png"  id="imgPlacement"  style="width: 90%;height: 100px;border-width: 02px;\n  border-style: solid;padding: 10px; margin-left: 10px;margin-top: 20px; border-color:gray;display: block;border-radius: 10px;">\n  </ion-item>\n  <p text-center>Please Enter the OTP below to verify your mobile number</p>\n  <form [formGroup]="otpForm"  class="input-border">\n      \n  <ion-item style="width:70%;margin-left:15%;">\n      <ion-label color="ligh-grey" floating>Enter OTP</ion-label>\n      <ion-input formControlName="otpinput" maxlength="5" type="number"  required></ion-input> \n  </ion-item>\n  <ion-item style="width:70%;margin-left:15%;">\n      <ion-buttons>\n          <button ion-button full  type="submit" [disabled]="!otpsubmitbtn" (click)="otpSubmit()">Submit</button>\n      </ion-buttons>\n      </ion-item>\n  </form>\n  \n  <h5 style="text-align: center"><span   id="time" [hidden]="shouldHide"  class="text-primary">01:00</span></h5>\n\n  <ion-buttons text-center>\n      <button ion-button  type="submit" [hidden]="!otpresendbtn" (click)="resendSubmit()">Resend</button>\n  </ion-buttons>\n</ion-content>\n'/*ion-inline-end:"/Users/icommmac/Documents/ionic_3/FormulaHR/src/pages/otpverify/otpverify.html"*/,
+            selector: 'page-otpverify',template:/*ion-inline-start:"/Users/icommmac/Desktop/Rajesh/FHRIOS/src/pages/otpverify/otpverify.html"*/'<!--\n  Generated template for the OtpverifyPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  \n</ion-header>\n\n<ion-content >\n  <ion-item>\n  <img  src="assets/imgs/fhr_onthegologored.png"  id="imgPlacement"  style="width: 90%;height: 100px;border-width: 02px;\n  border-style: solid;padding: 10px; margin-left: 10px;margin-top: 20px; border-color:gray;display: block;border-radius: 10px;">\n  </ion-item>\n  <p text-center>Please Enter the OTP below to verify your mobile number</p>\n  <form [formGroup]="otpForm"  class="input-border">\n      \n  <ion-item style="width:70%;margin-left:15%;">\n      <ion-label color="ligh-grey" floating>Enter OTP</ion-label>\n      <ion-input formControlName="otpinput" maxlength="5" type="number"  required></ion-input> \n  </ion-item>\n  <ion-item style="width:70%;margin-left:15%;">\n      <ion-buttons>\n          <button ion-button full  type="submit" [disabled]="!otpsubmitbtn" (click)="otpSubmit()">Submit</button>\n      </ion-buttons>\n      </ion-item>\n  </form>\n  \n  <h5 style="text-align: center"><span   id="time" [hidden]="shouldHide"  class="text-primary">01:00</span></h5>\n\n  <ion-buttons text-center>\n      <button ion-button  type="submit" [hidden]="!otpresendbtn" (click)="resendSubmit()">Resend</button>\n  </ion-buttons>\n</ion-content>\n'/*ion-inline-end:"/Users/icommmac/Desktop/Rajesh/FHRIOS/src/pages/otpverify/otpverify.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__["a" /* Network */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_5__providers_auth_service_auth_service__["a" /* AuthServiceProvider */]])
     ], OtpverifyPage);
@@ -2747,7 +2711,234 @@ var OtpverifyPage = /** @class */ (function () {
 
 //# sourceMappingURL=otpverify.js.map
 
+/***/ }),
+
+/***/ 81:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_app_version__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_device__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_auth_service_auth_service__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__otpverify_otpverify__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_network__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_safari_view_controller__ = __webpack_require__(79);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+/**
+ * Generated class for the RegisterPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var RegisterPage = /** @class */ (function () {
+    function RegisterPage(safariViewController, alertCtrl, network, device, navCtrl, toastCtrl, authservice, loadingCtrl, navParams, appVersion) {
+        var _this = this;
+        this.safariViewController = safariViewController;
+        this.alertCtrl = alertCtrl;
+        this.network = network;
+        this.device = device;
+        this.navCtrl = navCtrl;
+        this.toastCtrl = toastCtrl;
+        this.authservice = authservice;
+        this.loadingCtrl = loadingCtrl;
+        this.navParams = navParams;
+        this.appVersion = appVersion;
+        this.type = 'password';
+        this.showPass = false;
+        //console.log('Device model is: ' + this.device.model);
+        this.registrationForm = new __WEBPACK_IMPORTED_MODULE_4__angular_forms__["b" /* FormGroup */]({
+            clientID: new __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormControl */]('', [__WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].required]),
+            userName: new __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormControl */]('', [__WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].required]),
+            password: new __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormControl */]('', [__WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].required]),
+            mobile: new __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormControl */]('', [__WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].minLength(10), __WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].maxLength(12)]),
+            isTosRead: new __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormControl */](false, [__WEBPACK_IMPORTED_MODULE_4__angular_forms__["g" /* Validators */].requiredTrue])
+        });
+        //console.log(this.registrationForm.value.clientID);
+        console.log(this.registrationForm);
+        this.navCtrl.swipeBackEnabled = false;
+        //network
+        var disconnectSubscription = this.network.onDisconnect().subscribe(function () {
+            var toast = _this.toastCtrl.create({
+                message: 'Please check your internet connection. And try again',
+                duration: 3000,
+                position: 'bottom'
+            });
+            toast.onDidDismiss(function () {
+                console.log('Dismissed toast');
+            });
+            toast.present();
+        });
+        // watch network for a connection
+        var connectSubscription = this.network.onConnect().subscribe(function () {
+            var toast = _this.toastCtrl.create({
+                message: 'Internet connected!',
+                duration: 3000,
+                position: 'bottom'
+            });
+            toast.onDidDismiss(function () {
+                console.log('Dismissed toast');
+            });
+            toast.present();
+        });
+    }
+    RegisterPage.prototype.showAlert = function (title, subtitle, alertcode) {
+        var _this = this;
+        if (alertcode == 1) {
+            var alert_1 = this.alertCtrl.create({
+                title: title,
+                subTitle: subtitle,
+                buttons: [
+                    {
+                        text: 'Retry',
+                        handler: function () {
+                            if (_this.authservice.checkNetwork()) {
+                                _this.navCtrl.push(_this.navCtrl.getActive().component);
+                            }
+                            else {
+                                _this.showAlert("Internet not available", "Cross check your internet connectivity and try again.", 1);
+                            }
+                            // this.navCtrl.swipeBackEnabled = false;
+                            // this.MobileAppLoad();
+                        }
+                    }
+                ],
+                enableBackdropDismiss: false // <- Here! :)
+            });
+            alert_1.present();
+        }
+    };
+    RegisterPage.prototype.showToast = function (message) {
+        var toast = this.toastCtrl.create({
+            message: message,
+            duration: 3000,
+            position: 'bottom'
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    RegisterPage.prototype.showLoading = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Please wait...'
+        });
+        this.loading.present();
+    };
+    RegisterPage.prototype.hideLoading = function () {
+        this.loading.dismiss();
+    };
+    RegisterPage.prototype.showPassword = function () {
+        this.showPass = !this.showPass;
+        if (this.showPass) {
+            this.type = 'text';
+        }
+        else {
+            this.type = 'password';
+        }
+    };
+    RegisterPage.prototype.regForm = function () {
+        var _this = this;
+        if (this.network.type == 'none') {
+            this.showToast('Please check your internet connection. And try again');
+        }
+        else {
+            this.showLoading();
+            this.userdata = {
+                CompanyId: this.registrationForm.value.clientID,
+                UserName: this.registrationForm.value.userName,
+                Password: this.registrationForm.value.password,
+                MobileNumber: this.registrationForm.value.mobile,
+                RegistrationId: window.localStorage.getItem('Token'),
+                VersionName: window.localStorage.getItem('buildVersion'),
+                DeviceName: 'iOS',
+                ModalName: 'iOS',
+                DeviceUniqueID: this.device.uuid
+            };
+            console.log(JSON.stringify(this.userdata));
+            //alert(this.registrationForm.value.clientID);
+            //this.showLoading();
+            //alert(JSON.stringify(this.userdata));
+            this.authservice.addUser(JSON.stringify(this.userdata))
+                .then(function (data) {
+                _this.res = data;
+                if (_this.res.d.ErrFlag == 0) {
+                    _this.hideLoading();
+                    window.localStorage.setItem('isregistered', '1');
+                    window.localStorage.setItem('clientURL', _this.res.d.URL);
+                    _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__otpverify_otpverify__["a" /* OtpverifyPage */]);
+                }
+                else {
+                    _this.hideLoading();
+                    _this.showToast(_this.res.d.ErrMessage);
+                }
+                //alert(JSON.stringify(this.res.d));
+                console.log(JSON.stringify(_this.res.d));
+            });
+        }
+    };
+    RegisterPage.prototype.OpenPolicy = function () {
+        var _this = this;
+        this.safariViewController.isAvailable()
+            .then(function (available) {
+            if (available) {
+                _this.safariViewController.show({
+                    url: 'http://www.formulahr.com/privacy_policy.html',
+                    hidden: false,
+                    animated: false,
+                    transition: 'curl',
+                    enterReaderModeIfAvailable: true,
+                    tintColor: '#ff0000'
+                })
+                    .subscribe(function (result) {
+                    if (result.event === 'opened')
+                        console.log('Opened');
+                    else if (result.event === 'loaded')
+                        console.log('Loaded');
+                    else if (result.event === 'closed')
+                        console.log('Closed');
+                }, function (error) { return console.error(error); });
+            }
+            else {
+                console.log("================2 register");
+                // use fallback browser, example InAppBrowser
+            }
+        });
+        //window1.open('http://www.formulahr.com/privacy_policy.html','_blank','location=no,closebuttoncaption=Close');
+    };
+    RegisterPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-register',template:/*ion-inline-start:"/Users/icommmac/Desktop/Rajesh/FHRIOS/src/pages/register/register.html"*/'<!--\n  Generated template for the RegisterPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<!-- <ion-header>\n  <ion-navbar>\n    <ion-title>register</ion-title>\n \n</ion-header> -->\n\n\n<ion-content >\n  <ion-item>\n    <img  src="assets/imgs/fhr_onthegologored.png"  id="imgPlacement"  style="width: 90%;height: 100px;border-width: 02px;\n    border-style: solid;padding: 10px; margin-left: 10px;margin-top: 20px; border-color:gray;display: block;border-radius: 10px;">\n    </ion-item>\n  <!-- <img  src="assets/imgs/fhr_onthegologored.png"  id="imgPlacement"  style="width: 70%;height: 100px;border-width: 02px;\n  border-style: solid;padding: 10px; margin-left: 20px;margin-top: 10px; border-color:gray;display: block;border-radius: 10px;">\n   -->\n     <p text-center>Please login to begin using FormulaHR On the Go.</p>\n  \n    \n    <ion-list class="items-middle" text-center>\n      \n      <!-- use the [formGroup] directive to tell Angular that we want to use the registrationForm as the "FormGroup" for this form: -->\n      <form [formGroup]="registrationForm" class="input-border">\n             \n          <ion-item >\n              <ion-label color="ligh-grey" floating>Client ID</ion-label>\n              <ion-input  formControlName="clientID" type="text"  required></ion-input>\n              \n          </ion-item>\n        \n          <ion-item>\n              <ion-label color="ligh-grey" floating>User Name</ion-label>\n              <ion-input  formControlName="userName" type="text"  required></ion-input>\n          </ion-item>\n\n          <ion-item>\n              <ion-label color="ligh-grey" floating>Password</ion-label>\n              <ion-input  formControlName="password" type="{{type}}"  required></ion-input>\n              <button *ngIf="!showPass" ion-button clear color="dark" type="button" item-right (click)="showPassword()"> <ion-icon name="ios-eye-off-outline"></ion-icon></button>\n              <button *ngIf="showPass" ion-button clear color="dark" type="button" item-right (click)="showPassword()"> <ion-icon name="ios-eye-outline"></ion-icon></button> \n          </ion-item>\n          \n         <ion-item>\n                <ion-label color="ligh-grey" floating>Mobile Number</ion-label>\n                <ion-input  formControlName="mobile" type="number" pattern="[0-9]*"  required></ion-input>\n         </ion-item>\n\n          <ion-item>\n            <input type="checkbox" formControlName="isTosRead"><a href="#" (click)="OpenPolicy()"> Terms & condition </a>\n          </ion-item>\n          <!-- We can check if our form is valid: -->\n          \n      </form>\n      <ion-buttons style="padding-left:10px;padding-right:10px;">\n        <button ion-button full  type="submit" [disabled]="!registrationForm.valid" (click)="regForm()">Register</button>\n    </ion-buttons>\n  </ion-list>\n  \n\n</ion-content>\n'/*ion-inline-end:"/Users/icommmac/Desktop/Rajesh/FHRIOS/src/pages/register/register.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_8__ionic_native_safari_view_controller__["a" /* SafariViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_7__ionic_native_network__["a" /* Network */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_device__["a" /* Device */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */], __WEBPACK_IMPORTED_MODULE_5__providers_auth_service_auth_service__["a" /* AuthServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_app_version__["a" /* AppVersion */]])
+    ], RegisterPage);
+    return RegisterPage;
+}());
+
+//# sourceMappingURL=register.js.map
+
 /***/ })
 
-},[317]);
+},[318]);
 //# sourceMappingURL=main.js.map

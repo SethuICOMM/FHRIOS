@@ -25,7 +25,7 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
 import { Push, PushObject, PushOptions } from '@ionic-native/push';
 import { FCM } from '@ionic-native/fcm';
 import { Keyboard } from '@ionic-native/keyboard';
-
+import { SafariViewController } from '@ionic-native/safari-view-controller';
 @NgModule({
   declarations: [
     MyApp,
@@ -63,7 +63,8 @@ import { Keyboard } from '@ionic-native/keyboard';
     Network,
     Diagnostic,Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AuthServiceProvider
+    AuthServiceProvider,
+    SafariViewController
   ]
 })
 export class AppModule {}

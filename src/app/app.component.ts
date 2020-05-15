@@ -10,7 +10,7 @@ import { Push, PushObject, PushOptions } from '@ionic-native/push';
 import Crypto from 'crypto-js'; 
 import { AuthServiceProvider } from '../providers/auth-service/auth-service';
 import { Keyboard } from '@ionic-native/keyboard';
-
+import { SafariViewController } from '@ionic-native/safari-view-controller';
 @Component({
   templateUrl: 'app.html'
 })
@@ -18,7 +18,7 @@ export class MyApp {
   rootPage:any = SplashPage;
   pin:any;
 buildversion:any;
-  constructor(private keyboard: Keyboard,private toastCtrl: ToastController,public authservice: AuthServiceProvider,private push: Push,public network: Network,private alertCtrl: AlertController,platform: Platform,device:Device, statusBar: StatusBar,private appVersion: AppVersion, splashScreen: SplashScreen) {
+  constructor(private safariViewController: SafariViewController,private keyboard: Keyboard,private toastCtrl: ToastController,public authservice: AuthServiceProvider,private push: Push,public network: Network,private alertCtrl: AlertController,platform: Platform,device:Device, statusBar: StatusBar,private appVersion: AppVersion, splashScreen: SplashScreen) {
     platform.ready().then(() => {
     // to initialize push notifications
 
@@ -127,7 +127,34 @@ pushObject.on('notification').subscribe((notification: any) =>
                         {
                          // this.hideLoading();
                           let notificationWebURL = window.localStorage.getItem('clientURL')+res.d.PageName+"?SessionKey="+res.d.SessionKey+"&MobilePin="+ this.pin+"&param1="+ window.localStorage.getItem('notificationParam');
-                           window.open(notificationWebURL, '_blank', 'location=yes,closebuttoncaption=Close,EnableViewPortScale=yes');
+                          this.safariViewController.isAvailable()
+  .then((available: boolean) => {
+      if (available) {
+
+        this.safariViewController.show({
+          url:notificationWebURL,
+          hidden: false,
+          animated: false,
+          transition: 'curl',
+          enterReaderModeIfAvailable: true,
+          tintColor: '#ff0000'
+        })
+        .subscribe((result: any) => {
+            if(result.event === 'opened') console.log('Opened');
+            else if(result.event === 'loaded') console.log('Loaded');
+            else if(result.event === 'closed') console.log('Closed');
+          },
+          (error: any) => console.error(error)
+        );
+
+      } else {
+        console.log("==================== 1 ");
+        // use fallback browser, example InAppBrowser
+       // window1.open(notificationWebURL, '_blank', 'location=yes,closebuttoncaption=Close,EnableViewPortScale=yes');
+      }
+    }
+  );
+                          
                   
                         }
                         else

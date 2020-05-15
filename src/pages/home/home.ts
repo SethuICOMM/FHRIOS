@@ -10,6 +10,8 @@ import { Globalization } from '@ionic-native/globalization';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { Network } from '@ionic-native/network';
 import { LoginPage } from '../login/login';
+import { SafariViewController } from '@ionic-native/safari-view-controller';
+
 
 import { NativeGeocoder,NativeGeocoderReverseResult, NativeGeocoderOptions } from '@ionic-native/native-geocoder';
 @Component({
@@ -54,7 +56,7 @@ curlongitude:any;
   curAddress:string='';
   TimeZoneOffset:string="";
 
-  constructor(public network: Network,private camera: Camera,private globalization: Globalization,private nativeGeocoder: NativeGeocoder,private geolocation: Geolocation,public platform: Platform,private diagnostic: Diagnostic,public navCtrl: NavController,public navParams: NavParams,public loadingCtrl: LoadingController,private toastCtrl: ToastController,private alertCtrl: AlertController,public authservice: AuthServiceProvider) {
+  constructor(private safariViewController: SafariViewController,public network: Network,private camera: Camera,private globalization: Globalization,private nativeGeocoder: NativeGeocoder,private geolocation: Geolocation,public platform: Platform,private diagnostic: Diagnostic,public navCtrl: NavController,public navParams: NavParams,public loadingCtrl: LoadingController,private toastCtrl: ToastController,private alertCtrl: AlertController,public authservice: AuthServiceProvider) {
     this.logindata=navParams.get("JsonData");
     this.Name = this.logindata.Name;
     this.Premises = 0;
@@ -689,7 +691,33 @@ curlongitude:any;
             {
               this.hideLoading();
               let mainURL = window.localStorage.getItem('clientURL')+res.d.PageName+"?SessionKey="+res.d.SessionKey+"&MobilePin="+this.pin;
-              window.open(mainURL, '_blank', 'location=no,closebuttoncaption=Close');
+              this.safariViewController.isAvailable()
+  .then((available: boolean) => {
+      if (available) {
+
+        this.safariViewController.show({
+          url: mainURL,
+          hidden: false,
+          animated: false,
+          transition: 'curl',
+          enterReaderModeIfAvailable: true,
+          tintColor: '#ff0000'
+        })
+        .subscribe((result: any) => {
+            if(result.event === 'opened') console.log('Opened');
+            else if(result.event === 'loaded') console.log('Loaded');
+            else if(result.event === 'closed') console.log('Closed');
+          },
+          (error: any) => console.error(error)
+        );
+
+      } else {
+        console.log("================2");
+        // use fallback browser, example InAppBrowser
+      }
+    }
+  );
+              //window1.open(mainURL, '_blank', 'location=no,closebuttoncaption=Close');
             //   let target : string = '_self',
             //     opts   : string = 'clearcache=yes,clearsessioncache=yes,toolbar=yes,location=yes';
 
@@ -1219,7 +1247,33 @@ alert('Error getting location'+ error);
           {
             this.hideLoading();
             let notificationWebURL = window.localStorage.getItem('clientURL')+res.d.PageName+"?SessionKey="+res.d.SessionKey+"&MobilePin="+ this.pin+"&param1="+ window.localStorage.getItem('notificationParam');
-            window.open(notificationWebURL, '_blank', 'location=yes,closebuttoncaption=Close,EnableViewPortScale=yes');
+            this.safariViewController.isAvailable()
+            .then((available: boolean) => {
+                if (available) {
+          
+                  this.safariViewController.show({
+                    url: notificationWebURL,
+                    hidden: false,
+                    animated: false,
+                    transition: 'curl',
+                    enterReaderModeIfAvailable: true,
+                    tintColor: '#ff0000'
+                  })
+                  .subscribe((result: any) => {
+                      if(result.event === 'opened') console.log('Opened');
+                      else if(result.event === 'loaded') console.log('Loaded');
+                      else if(result.event === 'closed') console.log('Closed');
+                    },
+                    (error: any) => console.error(error)
+                  );
+          
+                } else {
+                  console.log("===============3");
+                  // use fallback browser, example InAppBrowser
+                }
+              }
+            );
+            //     window1.open(notificationWebURL, '_blank', 'location=yes,closebuttoncaption=Close,EnableViewPortScale=yes');
 
           }
           else

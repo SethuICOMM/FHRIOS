@@ -7,6 +7,7 @@ import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
 import { ToastController } from 'ionic-angular';
 import { OtpverifyPage } from '../otpverify/otpverify';
 import { Network } from '@ionic-native/network';
+import { SafariViewController } from '@ionic-native/safari-view-controller';
 /**
  * Generated class for the RegisterPage page.
  *
@@ -27,7 +28,7 @@ export class RegisterPage {
    loading:any;
    public userdata:any;
   
-  constructor(private alertCtrl: AlertController,public network: Network,private device: Device,public navCtrl: NavController,private toastCtrl: ToastController,public authservice: AuthServiceProvider,public loadingCtrl: LoadingController, public navParams: NavParams, public appVersion: AppVersion) {
+  constructor(private safariViewController: SafariViewController,private alertCtrl: AlertController,public network: Network,private device: Device,public navCtrl: NavController,private toastCtrl: ToastController,public authservice: AuthServiceProvider,public loadingCtrl: LoadingController, public navParams: NavParams, public appVersion: AppVersion) {
     //console.log('Device model is: ' + this.device.model);
     this.registrationForm = new FormGroup({
       clientID: new FormControl('', [Validators.required]),
@@ -192,7 +193,33 @@ export class RegisterPage {
   
 OpenPolicy()
 {
-  window.open('http://www.formulahr.com/privacy_policy.html','_blank','location=no,closebuttoncaption=Close');
+  this.safariViewController.isAvailable()
+  .then((available: boolean) => {
+      if (available) {
+
+        this.safariViewController.show({
+          url: 'http://www.formulahr.com/privacy_policy.html',
+          hidden: false,
+          animated: false,
+          transition: 'curl',
+          enterReaderModeIfAvailable: true,
+          tintColor: '#ff0000'
+        })
+        .subscribe((result: any) => {
+            if(result.event === 'opened') console.log('Opened');
+            else if(result.event === 'loaded') console.log('Loaded');
+            else if(result.event === 'closed') console.log('Closed');
+          },
+          (error: any) => console.error(error)
+        );
+
+      } else { console.log("================2 register");
+
+        // use fallback browser, example InAppBrowser
+      }
+    }
+  );
+  //window1.open('http://www.formulahr.com/privacy_policy.html','_blank','location=no,closebuttoncaption=Close');
 }
 
 }
